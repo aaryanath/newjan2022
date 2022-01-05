@@ -1,10 +1,10 @@
 node('master_lab') 
 {
-    stage('Continuous Download') 
+    stage('Continuous Download_master') 
 	{
     git 'https://github.com/sunildevops77/maven.git'
 	}
-    stage('Continuous Build') 
+    stage('Continuous Build_master') 
 	{
     sh 'mvn package'
 	}
